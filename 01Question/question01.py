@@ -26,7 +26,6 @@ while True:
         if check_pos(position):
             list.append(str(count)+current_letter)
             break
-        position += 1
     else:
         list.append(str(count)+current_letter)
         current_letter = string[position]
@@ -34,6 +33,6 @@ while True:
             list.append(str(count)+current_letter)
             break
         count = 1
-        position += 1
+    position += 1
 encoded_string = encoded_string.join(list)
 print(encoded_string)
